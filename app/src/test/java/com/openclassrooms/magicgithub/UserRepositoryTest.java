@@ -35,6 +35,7 @@ public class UserRepositoryTest {
     public void getUsersWithSuccess() {
         List<User> usersActual = userRepository.getUsers();
         List<User> usersExpected = FAKE_USERS;
+        System.out.println(FAKE_USERS);
         assertThat(usersActual, containsInAnyOrder(usersExpected.toArray()));
     }
 
